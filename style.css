@@ -1,0 +1,312 @@
+:root {
+    --button: #FF0000;
+    --button-hover: #b30000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --footer-hover: #303030;
+    --text-description: #9C9696;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+
+    background: var(--background);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    border: none;
+
+    background: none;
+}
+
+button, img {
+    cursor: pointer;
+}
+
+.container {
+    min-width: 1444px;
+
+    padding-top: 3.9rem;
+
+    position: relative;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-inline: 6rem;
+}
+
+.logo {
+    width: 5.2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 9rem;
+
+    /*margin-inline: 11.4rem 8.2rem;*/
+}
+
+.nav-menu a {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+
+    color: var(--text);
+
+    text-transform: uppercase;
+}
+
+.search {
+    width: 22rem;
+    height: 4.5rem;
+
+    display: flex;
+    gap: .5rem;
+
+    background: #FFFFFF;
+}
+
+.search-btn {
+    width: 2.4rem;
+
+    padding: 0;
+    margin-left: 1.3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+
+    color: var(--text-description);
+
+    width: 17.8rem;
+}
+
+.shopping-cart {
+    width: 3.4rem;
+
+    /*margin-left: 8rem;*/
+}
+
+#main {
+    display: flex;
+    gap: 7.2rem;
+}
+
+.product-info {
+    width: 35.7rem;
+
+    margin-top: 10.3rem;
+    margin-left: 11.1rem;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 7rem;
+
+    color: var(--text);
+
+    margin-bottom: 2.1rem;
+}
+
+#description {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    color: var(--text-description);
+
+    margin-bottom: 2.1rem;
+}
+
+#price {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.7rem;
+
+    color: var(--text);
+
+    margin-bottom: 3rem;
+}
+
+.purchase {
+    background: var(--button);
+
+    padding: 3.3rem 7.7rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+}
+
+.purchase:hover {
+    background: var(--button-hover);
+
+    transition: background 1s ease;
+}
+
+.product-background {
+    width: 90rem;
+    height: 91.4rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    background: var(--main-background);
+}
+
+.product-imgs {
+    width: 90rem;
+    height: 82.9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-img {
+    width: 59.7rem;
+    height: 51.1rem;
+
+    margin-top: 8.8rem;
+}
+
+#selected-img {
+    width: 59.7rem;
+    height: 51.1rem;
+}
+
+.thumbnail-imgs {
+    display: flex;
+    gap: 3.7rem;
+
+    margin: 0 1.8rem 4.1rem;
+}
+
+.thumbnail-imgs img {
+    height: 18.3rem;
+}
+
+.thumbnail-imgs img.selected {
+    border-bottom: 5px solid var(--button);
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iframe {
+    height: 16.6rem;
+}
+
+.iframe iframe {
+    width: 25rem;
+    height: 16.6rem;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 9rem;
+
+    /*margin-inline: 4.7rem 7.7rem;*/
+}
+
+.footer-menu a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+
+    color: var(--text);
+
+    text-transform: uppercase;
+}
+
+.explore-more {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    
+    background: var(--footer);
+    color: #FFFFFF;
+
+    padding: 6.9rem 11.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    text-transform: uppercase;
+}
+
+.explore-more:hover {
+    background: var(--footer-hover);
+
+    transition: background 1s ease;
+}
+
+.explore-more svg {
+    width: 2.4rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        min-width: 1024px;
+    }
+
+    .nav-menu,
+    .footer-menu {
+        gap: 6rem;
+    }
+
+    #main {
+        gap: 4.8rem;
+    }
+
+    .product-info {
+        margin-left: 7.4rem;
+    }
+
+    .product-background {
+        width: 87.2rem;
+    }
+
+    .thumbnail-imgs {
+        gap: 2.5rem;
+    }
+}
