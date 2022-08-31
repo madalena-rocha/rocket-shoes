@@ -1,2 +1,6 @@
 # rocket-shoes
-Desafio "RocketShoes" do Discover da Rocketseat.
+
+<a href="https://app.rocketseat.com.br/discover/challenges/rocket-shoes">Desafio "RocketShoes"</a> do Discover da Rocketseat. <br>
+Objetivo: Desenvolver um mini e-commerce de calçados esportivos. <br>
+
+![Desafio "RocketShoes"]()
