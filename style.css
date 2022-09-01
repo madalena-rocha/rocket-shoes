@@ -117,7 +117,8 @@ button, img {
 
 #main {
     display: flex;
-    gap: 7.2rem;
+    justify-content: space-between;
+    /*gap: 7.2rem;*/
 }
 
 .product-info {
@@ -294,15 +295,12 @@ button, img {
         gap: 6rem;
     }
 
-    #main {
-        gap: 4.8rem;
-    }
-
     .product-info {
         margin-left: 7.4rem;
     }
 
-    .product-background {
+    .product-background,
+    .product-imgs {
         width: 87.2rem;
     }
 
